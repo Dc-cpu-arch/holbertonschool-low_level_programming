@@ -2,8 +2,8 @@
 
 /**
  *main - prints the alphabet in lowercase, followed by a new line.
- *
- *Return = Always 0
+ *1
+ *Return:  Always 0
  *
  */
 
@@ -14,7 +14,7 @@ a = 'a';
 while (a <= 'z')
 {
 putchar(a);
-a++;
+a = a + 1;
 }
 putchar('\n');
 return (0);
