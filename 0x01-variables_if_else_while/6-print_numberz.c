@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  *main - print all digit numbers
  *Return: Allways 0
  */
