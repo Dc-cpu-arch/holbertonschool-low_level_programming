@@ -1,0 +1,16 @@
+#include "holberton.h"
+
+/**
+ *main - types Holberton and '\n'
+ *
+ *Return: Always ok = 0
+ */
+
+int main(void)
+{
+	char c = 'n';
+
+	_putchar (c);
+
+	return (0);
+}
