@@ -1,28 +1,26 @@
 #include "holberton.h"
-
 /**
- *print_triangle - prints a triangle
- *@size: triangle area
+ *print_triangle - printing numbers from 0-9  whithout 2 and 4
+ *@n: size of the square
+ *
+ *Return: 1 if is lowercase, 0 otherwise
  */
-
-void print_triangle(int size)
+void print_triangle(int n)
 {
-	int i = 0, j = 0;
+	int i, j;
 
-	if (size < 0)
-
-		putchar('\n');
-
-	while (i < size)
+	if (n > 0)
 	{
-		j = 0;
-
-		while (j < size)
+		for (i = 0; i < n; i++)
 		{
-		(j >= (size - 1 - i)) ? _putchar(35) : _putchar(' ');
-		j++;
+			for (j = 0; j < n; j++)
+			{
+				(j >= (n - 1) - i) ?
+					(_putchar('#')) : (_putchar(' '));
+			}
+			_putchar('\n');
 		}
-		_putchar('\n');
-		i++;
 	}
+	else
+		_putchar('\n');
 }
