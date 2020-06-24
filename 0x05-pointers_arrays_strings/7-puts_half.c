@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * puths_half - prints half of a string.
+ * puts_half - prints half of a string.
  * @str: string with 10 numbers (0 to 9).
  * Return: Null.
  */
