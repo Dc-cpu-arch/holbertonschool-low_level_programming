@@ -1,4 +1,4 @@
-#include "holberton.h"
+B#include "holberton.h"
 
 /**
  * _strcmp - compares two strings
@@ -26,6 +26,6 @@ int _strcmp(char *s1, char *s2)
 
 	else
 	{
-		return (*s1 > * s2 ? 1 : -1);
+		return (*s1 > *s2 ? 1 : -1);
 	}
 }
