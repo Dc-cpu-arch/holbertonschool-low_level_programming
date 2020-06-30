@@ -15,11 +15,11 @@ char *string_toupper(char *s)
 	while (s[i])
 	{
 		if (s[i] >= 'a' && s[i] <= 'z')
-			{
-				s[i] = s[i] - upper;
-			}
+		{
+			s[i] = s[i] - upper;
+		}
 
 			i++;
 	}
-		return (s);
+	return (s);
 }
