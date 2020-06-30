@@ -1,11 +1,14 @@
 #include "holberton.h"
 
 /**
- * *_strncat - concatenates two strings limitating n bytes
- *@src: source string
- *@dest: destination (second) string
- *@n: the number of bytes to be copied
- *Return: pointer to destination buffer
+ * *_strncat - main function.
+ * @src: The source.
+ * @dest: The destination.
+ * @n: The number of bytes to copy.
+ *
+ * Description: This function concatenates two strings with limiter n bytes.
+ *
+ * Return: The pointer to destination buffer.
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -27,6 +30,7 @@ char *_strncat(char *dest, char *src, int n)
 	dest[d + i] = 0;
 	return (dest);
 }
+
 
 /**
  * _strlen - main function.
