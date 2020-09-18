@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - assign a random number to the variable n each time it is executed
+ * main - shows in stdout if the last number of a random number is > 5 < 6 or 0
  *
  * Return: Always 0
  */
