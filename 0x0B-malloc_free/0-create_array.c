@@ -20,7 +20,7 @@ char *create_array(unsigned int size, char c)
 	if (allocated_memory_to_array == NULL)
 		return (NULL);
 
-	for (; i <= size - 1; i++)
+	for (; i < size; i++)
 		*(allocated_memory_to_array + i) = c;
 
 	allocated_memory_to_array[i++] = '\0';
