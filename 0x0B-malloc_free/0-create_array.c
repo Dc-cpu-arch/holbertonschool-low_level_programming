@@ -9,21 +9,21 @@
 
 char *create_array(unsigned int size, char c)
 {
-	int i = 0; /* iterator*/
-	char *allocated_memory_to_array = NULL; /* pointer to future array */
+	int i = 0;
+	char *allocated_memory_to_array = NULL;
 
 	if (size == 0)
 		return (NULL);
 
-	allocated_memory_to_array = malloc(sizeof(char) * size); /* memalloc */
+	allocated_memory_to_array = malloc(sizeof(char) * size);
 
 	if (p == NULL)
 		return (NULL);
 
 	for (; i <= size - 1; i++)
-		*(allocated_memory_to_array + i) = c; /* dereferencing */
+		*(allocated_memory_to_array + i) = c;
 
-	allocated_memory_to_array[i++] = '\0'; /*covering the null char	ending*/
+	allocated_memory_to_array[i++] = '\0';
 
-	return (allocated_memory_to_array); /* success return */
+	return (allocated_memory_to_array);
 }
