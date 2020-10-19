@@ -21,8 +21,5 @@ void simple_print_buffer(char *buffer, unsigned int size);
 
 void print_grid(int **grid, int width, int height);
 
-int main(int ac, char *av[]);
-
-int main(void);
 
 #endif /* _HOLBERTON_H_ */
