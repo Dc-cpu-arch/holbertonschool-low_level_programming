@@ -13,10 +13,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n);
 
 void *malloc_checked(unsigned int b);
 
-void simple_print_buffer(char *buffer, unsigned int size);
-
-void simple_print_buffer(int *buffer, unsigned int size);
-
 char **strtow(char *str);
 
 #endif /* _HOLBERTON_H_ */
