@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * add_node_end - Entry point
- * @head: pointer to the head.
- * @str: value
- * Return: Always 0 (Success)
+ * add_node_end - adds a new node at the beginning of a single linked list.
+ * @head: pointer to pointer to the first node of the list, the head.
+ * @str: main member of the node structure.
+ * Return: a pointer towards the newly created node.
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -22,7 +22,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	new->len = i;
 	new->str = strdub(str);
 	new->next = *head;
-	
+
 	*head = new;
 
 	return (new);
