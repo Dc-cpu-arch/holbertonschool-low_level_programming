@@ -2,7 +2,7 @@
 
 /**
  * print_list - prints the members of the nodes of a list and counts them.
- * @: pointer to the first node of the list.
+ * @h: pointer to the first node of the list.
  * Return: amount of nodes whitin the list.
  */
 size_t print_list(const list_t *h)
