@@ -12,7 +12,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *first = *head;
 	int i;
 
-	for (i = 0; *(str + i) != '\0'; i++)/*iterating the string*/
+	for (i = 0; *(str + i) != '\0'; i++)
 
 	new = (list_t *)malloc(sizeof(list_t));
 
@@ -21,8 +21,8 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	new->len = i;
 	new->str = strdub(str);
-	new->next = *head; /*pointer to the next node of the list*/
-	/*list is created from the top down*/
+	new->next = *head;
+	
 	*head = new;
 
 	return (new);
