@@ -10,21 +10,20 @@ size_t print_list(const list_t *h)
 	size_t nodes;
 	list_t *list;
 
-	list = (list_t *)h; /*exchanging values to do the iteration*/
+	list = (list_t *)h;
 
 	for (nodes = 0; list != NULL; nodes++)
 	{
-		if (list->str == NULL) /*if there's no 1st member*/
+		if (list->str == NULL)
 		{
 			printf("[0] (nil)\n");
 		}
 		else
 		{
 			printf("[%i] %s\n", list->len, list->str);
-			/*printing both members*/
 		}
 
-		list = list->next; /*giving pointer to the next node*/
+		list = list->next;
 	}
 	return (nodes);
 }
