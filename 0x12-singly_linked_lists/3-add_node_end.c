@@ -9,6 +9,7 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new;
+	list_t *prev = *head;
 	int i;
 
 	for (i = 0; *(str + i) != '\0'; i++)
@@ -20,9 +21,18 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	new->len = i;
 	new->str = strdup(str);
-	new->next = *head;
+	new->next = NULL;
 
-	*head = new;
+	if (*head == NULL)
+		*head = new;
+	else
+	{
+		while (prev->next != NULL) /*While there's a next node*/
+		{
+			prev = prev->next;/*go to the next node*/
+		}
+		prev->next = new; /*change pointer to the current node*/
+	}
 
 	return (new);
 }
