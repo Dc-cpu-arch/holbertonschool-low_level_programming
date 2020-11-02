@@ -3,8 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct dog_t;
-
 /**
  * struct dog - structured data type to save info about pets.
  * @name: name of the pet.
@@ -17,6 +15,8 @@ struct dog
 	float age;
 	char *owner;
 };
+
+typedef struct dog dog_t;
 
 int _putchar(char c);
 
