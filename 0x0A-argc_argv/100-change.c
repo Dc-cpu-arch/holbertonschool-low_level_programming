@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * change_cents - prints the minimun number of coins to make change.
