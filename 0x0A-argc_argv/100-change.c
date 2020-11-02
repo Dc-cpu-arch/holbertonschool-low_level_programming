@@ -18,7 +18,7 @@ int change_cents(int argc, char *argv[])
 
 		for (; i < 5; i++)
 		{
-			for(; e - coins[i] >= 0; coins_num++)
+			for (; e - coins[i] >= 0; coins_num++)
 			{
 				e -= coins[i];
 			}
