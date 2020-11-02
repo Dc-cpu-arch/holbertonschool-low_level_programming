@@ -1,4 +1,4 @@
-#include <stdlib.h>
+#include "dog.h"
 /**
  * _strlen - return the len of string *s
  * @s: a string.
