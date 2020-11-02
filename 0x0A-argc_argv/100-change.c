@@ -2,13 +2,13 @@
 #include <stdlib.h>
 
 /**
- * change_cents - prints the minimun number of coins to make change.
+ * main - prints the minimun number of coins to make change.
  * @argc: amount of arguments passed, only the program's name and one value.
  * @argv: array of two index.
  * Return: 1 if failed, 0 otherwise.
  */
 
-int change_cents(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int coins[] = {25, 10, 5, 2, 1};
 	int coins_num = 0, i = 0;
