@@ -6,7 +6,7 @@
  * @n: main member of the node-structure.
  * Return: pointer towards the newly created node.
  */
-lisstint_t *add_nodeint_end(listint_t **head, const int n)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *new, *prev;
 
