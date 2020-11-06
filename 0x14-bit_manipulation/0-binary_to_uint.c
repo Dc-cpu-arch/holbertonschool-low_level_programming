@@ -5,7 +5,7 @@
  * @b: pointer to a 0 and 1 string of chars.
  * Return: the converted integer number.
  */
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int n = 0;
 
