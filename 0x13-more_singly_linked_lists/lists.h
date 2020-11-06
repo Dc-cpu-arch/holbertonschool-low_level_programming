@@ -6,9 +6,12 @@
 #include <stdio.h>
 
 /**
- * struc listint_s - integer singer linked list.
- * @n: integer number.
- * @next: pointer to the next node.
+ * struc listint_s - singly linked list
+ * @n: integer
+ * @next: points to the next node
+ * 
+ * Description: singly linked list node structure
+ * for Holberton project
  */
 typedef struct listint_s
 {
