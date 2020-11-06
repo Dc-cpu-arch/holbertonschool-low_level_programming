@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * binary_to_unit - converts a binary number to an unsigned int.
+ * binary_to_uint - converts a binary number to an unsigned int.
  * @b: pointer to a 0 and 1 string of chars.
  * Return: the converted integer number.
  */
