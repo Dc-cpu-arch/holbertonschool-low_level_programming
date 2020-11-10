@@ -3,7 +3,7 @@
 /**
  * create_file - creates a file using file i/o and oflags.
  * @filename: pointer to chars with the name of the given file.
- * @text_content: pointer to chars with the characters to write in the file. 
+ * @text_content: pointer to chars with the characters to write in the file.
  *
  * Return: 1 if succeeded, otherwise -1.
  */
