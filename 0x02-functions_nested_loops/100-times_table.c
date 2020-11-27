@@ -1,45 +1,67 @@
 #include "holberton.h"
 
 /**
- *print_times_table - print times table
- *@c: param
- *Return: void
+ * last - format.
+ * @x: integer 1
+ * @n: integer 2
  */
-void print_times_table(int c)
+
+void last(int x, int n)
 {
-	int n, m, r;
-
-	if (c <= 15 && c >= 0)
+	if (x == n)
+		_putchar('\n');
+	else
 	{
-		n = 0;
-		while (n <= c)
-		{
-			m = 0;
-			while (m <= c)
-			{
-				r = n * m;
+		_putchar(',');
+		_putchar(' ');
+	}
+}
 
-				if (m != 0)
+/**
+ * print_times_table - prints the table "n" times.
+ * @n: integer 1.
+ */
+
+void print_times_table(int n)
+{
+	int x, a, b, c, y, d;
+
+	if (n <= 15 && n >= 0)
+	{
+		for (y = 0; y <= n; y++)
+		{
+			for (x = 0; x <= n; x++)
+			{
+				a = y * x;
+				d = a % 10;
+				if (a >= 0 && a <= 9)
 				{
-					(r / 100) == 0 ?
-						_putchar(' ') :
-						_putchar('0' + r / 100);
-					(r / 10) == 0 ?
-						_putchar(' ') :
-						_putchar('0' + ((r / 10) % 10));
-					_putchar('0' + r % 10);
+					if (x > 0)
+					{
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(d + '0');
+					}
+					else
+						_putchar(0 + '0');
+				}
+				else if (a >= 10 && a <= 99)
+				{
+					c = a / 10;
+					_putchar(' ');
+					_putchar(c + '0');
+					_putchar(d + '0');
 				}
 				else
-					_putchar('0');
-				if (m  != c)
 				{
-					_putchar(',');
-					_putchar(' ');
+					b = a / 100;
+					c = (a - (b * 100)) / 10;
+					_putchar(b + '0');
+					_putchar(c + '0');
+					_putchar(d + '0');
 				}
-				m++;
+				last(x, n);
 			}
-			_putchar('\n');
-			n++;
 		}
 	}
 }
