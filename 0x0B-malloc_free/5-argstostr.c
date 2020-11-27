@@ -5,40 +5,36 @@
  * @ac: number of args passed.
  * @av: array of arguments.
  */
-
 char *argstostr(int ac, char **av)
 {
-	int i, j, k, l = 0;
-	char *s;
+	char *arr;
+	int i = 0, j, l = 0, p = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-
-	for (i = 0; i < ac; i++)
+	while (av[i])
 	{
-		for (j = 0; av[i][j]; j++)
+		j = 0;
+		while (av[i][j])
+		{
 			l++;
+			j++;
+		}
+		i++;
 	}
-	l += ac;
-
-	s = malloc(sizeof(char) * l + 1);
-
-	if (s == NULL)
+	arr = malloc(l + ac + 1);
+	if (arr == NULL)
 		return (NULL);
-
-	k = 0;
-
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j]; j++)
 		{
-			s[k] = av[i][j];
-			k++;
+			arr[p] = av[i][j];
+			p++;
 		}
-		if (s[k] == '\0')
-		{
-			s[k++] = '\n';
-		}
+		arr[p] = '\n';
+		p++;
 	}
-	return (s);
+	arr[p] = '\0';
+	return (arr);
 }
