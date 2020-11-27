@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
- * *argstostr - concatenates all the arguments passed to the program.
+ * argstostr - concatenates all the arguments passed to the program.
  * @ac: number of args passed.
  * @av: array of arguments.
+ * Return: pointer to a new string.
  */
 char *argstostr(int ac, char **av)
 {
