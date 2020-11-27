@@ -41,9 +41,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (count == NULL)
 		return (NULL);
 	for (i = 0; i < len1; i++)
-		con[i] = s1[i];
+		count[i] = s1[i];
 	for (j = 0; j < n; j++)
-		con[i++] = s2[j];
+		count[i++] = s2[j];
 	count[i] = '\0';
 	return (count);
 }
