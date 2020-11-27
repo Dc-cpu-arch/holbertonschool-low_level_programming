@@ -5,27 +5,21 @@
  * @str: string to duplicate
  * Return: a pointer to the duplicated string if success, otherwise NULL
  */
-
 char *_strdup(char *str)
 {
-	unsigned int a, b, lon;
-	char *pointer_to_string = NULL;
+	int a, b = 0;
+	char *c;
 
 	if (str == NULL)
 		return (NULL);
+	while (str[b])
+		b++;
 
-	for (a = 0; str[a] != '\0'; a++)
-		lon++;
-
-	pointer_to_string = malloc(sizeof(char) * ++lon);
-
-	if (pointer_to_string == NULL)
+	c = malloc((sizeof(char) * b) + 1);
+	if (c == NULL)
 		return (NULL);
-
-	for (b = 0; b <= lon - 1; b++)
-	{
-		*(pointer_to_string + b) = str[b];
-	}
-
-	return (pointer_to_string);
+	for (a = 0; str[a]; a++)
+		c[a] = str[a];
+	c[a] = '\0';
+	return (c);
 }
