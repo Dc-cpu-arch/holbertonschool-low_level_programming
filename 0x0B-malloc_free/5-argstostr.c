@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * argstostr - concatenates all the arguments passed to the program.
+ * *argstostr - concatenates all the arguments passed to the program.
  * @ac: number of args passed.
  * @av: array of arguments.
  */
