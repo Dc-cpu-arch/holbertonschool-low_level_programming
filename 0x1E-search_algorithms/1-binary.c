@@ -2,7 +2,7 @@
 
 /**
  * printer - prints an array
- * @array: pointer to index 0 of array 
+ * @array: pointer to index 0 of array
  * @low: first index of @array
  * @high: last index of @array
  */
